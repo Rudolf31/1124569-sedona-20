@@ -1,7 +1,7 @@
 # Личный проект «Седона» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Рудольф Шевченко](https://up.htmlacademy.ru/adaptive/20/user/1124569).
-* Наставник: Роман Кушнир.
+* Наставник: [Роман Кушнир](https://htmlacademy.ru/profile/id485545).
 
 ---
 
