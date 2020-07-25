@@ -26,48 +26,61 @@
     <main class="forms">
       <h1 class="forms__title">ОСТАВЬТЕ СВОЙ ОТЗЫВ</h1>
       <p class="forms__description">ПОМОГИТЕ НАШИМ ОТЕЛЯМ СТАТЬ ЛУЧШЕ! ОСТАВЬТЕ СВОЙ ОТЗЫВ О НИХ, А ТАКЖЕ О ПОСЕЩЕННЫХ ВАМИ ДОСТОПРИМЕЧАТЕЛЬНОСТЯХ</p>
-      <form class="forms__item" action="https://echo.htmlacademy.ru">
-        <h1 class="forms__title">ПРЕДСТАВЬТЕСЬ:</h1>
-        <span>ИМЯ*:</span>
-        <label for="name" class=""></label>
-        <input id="name" required type="text" name="name" placeholder="ПЕТР" class="">
-        <span>ФАМИЛИЯ*:</span>
-        <label for="surname" class=""></label>
-        <input id="surname" type="text" name="surname" placeholder="ИВАНОВ" class="">
-        <span>ОТЧЕСТВО:</span>
-        <label for="patronymic" class=""></label>
-        <input id="patronymic" type="text" name="patronymic" placeholder="АЛЕКСАНДРОВИЧ" class="">
-      </div>
-      <div class="forms__item">
-        <h1 class="forms__title">КОНТАКТНАЯ ИНФОРМАЦИЯ:</h1>
-        <p class="forms__description">КОНТАКТНЫЙ ТЕЛЕФОН*:</p>
-        <label for="user-telephone"></label>
-        <input id="user-telephone" type="tel" name="telephone" placeholder="Введите телефон">
-        <p class="forms__description">ЭЛЕКТРОННАЯ ПОЧТА*:</p>
-        <label for="user-login" class=""></label>
-        <input id="user-login" required type="text" name="login" placeholder="Введите e-mail" class="">
-      </div>
-      <div class="forms__item">
-        <h1 class="forms__title">ВАШЕ ОБЩЕЕ ВПЕЧАТЛЕНИЕ:</h1>
-        <ul class="forms__inner-list">
-          <li class="forms__inner-item">
-            <input type="radio" name="impression" value="положительное" id="positive" class="">
-            <label for="positive">Скорее положительное
-            </label>
-          </li>
-          <li class="forms__inner-item">
-            <input type="radio" name="negative" value="отрицательное" id="negative" class="">
-            <label for="negative">Скорее отрицательное
-            </label>
-          </li>
-          <li class="forms__inner-item">
-            <input type="radio" name="unknown" value="затрудняюсь" id="unknown" class="">
-            <label for="unknown">Затрудняюсь ответить
-          </label>
-          </li>
-        </ul>
-        <div class="forms__item">
-          <h1 class="forms__title">ПОСЕЩЕННЫЕ ДОСТОПРИМЕЧАТЕЛЬНОСТИ:</h1>
+      <form class="form__container" action="https://echo.htmlacademy.ru">
+        <fieldset class="form__fieldset">
+          <legend class="forms__title">ПРЕДСТАВЬТЕСЬ:</legend>
+          <ul class="forms-list">
+            <li class="forms-list__item">
+              <label for="name" class="">ИМЯ*:</label>
+              <input id="name" required type="text" name="name" placeholder="Петр" class="" required>
+            </li>
+            <li class="forms-list__item">
+              <label for="surname" class="">ФАМИЛИЯ*:</label>
+              <input id="surname" type="text" name="surname" placeholder="Иванов" class="" required>
+            </li>
+            <li class="forms-list__item">
+              <label for="patronymic" class="">Отчество:</label>
+              <input id="patronymic" type="text" name="patronymic" placeholder="Александрович" class="">
+            </li>
+          </ul>
+        </fieldset>
+        <fieldset class="form__fieldset">
+          <legend class="forms__title">КОНТАКТНАЯ ИНФОРМАЦИЯ:</legend>
+          <p class="forms__description">КОНТАКТНЫЙ ТЕЛЕФОН*:</p>
+          <ul class="forms-list">
+            <li class="forms-list__item">
+              <label for="user-telephone"></label>
+              <input id="user-telephone" type="tel" name="telephone" placeholder="Введите телефон" required>
+            </li>
+            <li class="forms-list__item">
+              <p class="forms__description">ЭЛЕКТРОННАЯ ПОЧТА*:</p>
+              <label for="user-login" class=""></label>
+              <input id="user-login" required type="email" name="login" placeholder="Введите e-mail" class="" required>
+            </li>
+          </ul>
+        </fieldset>
+        <fieldset class="form__fieldset">
+          <legend class="forms__title">ВАШЕ ОБЩЕЕ ВПЕЧАТЛЕНИЕ:</legend>
+          <ul class="form__fields-list ">
+            <li class="forms__field-item">
+              <input type="radio" name="impression" value="положительное" id="positive" class="">
+              <label for="positive">Скорее положительное
+              </label>
+            </li>
+            <li class="forms__field-item">
+              <input type="radio" name="impression" value="отрицательное" id="negative" class="">
+              <label for="negative">Скорее отрицательное
+              </label>
+            </li>
+            <li class="forms__field-item">
+              <input type="radio" name="impression" value="затрудняюсь" id="unknown" class="">
+              <label for="unknown">Затрудняюсь ответить
+              </label>
+            </li>
+          </ul>
+        </fieldset>
+        <fieldset class="form__fieldset">
+          <legend class="forms__title">ПОСЕЩЕННЫЕ ДОСТОПРИМЕЧАТЕЛЬНОСТИ:</legend>
           <ul class="forms__inner-list">
             <li class="forms__inner-item">
               <input class="" type="checkbox" name="bridge" id="bridge" checked>
@@ -86,12 +99,13 @@
               <label for="rocks">Красные скалы</label>
             </li>
           </ul>
-          <div class="forms__item">
-            <h1 class="forms__title">ОПИШИТЕ СВОИ ЭМОЦИИ:</h1>
-            <label for="delights" class=""></label><textarea id="delights" name="delights" placeholder="Опишите подробно все свои восторги"></textarea>
+          <fieldset class="form__fieldset">
+            <legend class="forms__title">ОПИШИТЕ СВОИ ЭМОЦИИ:</legend>
+            <label for="delights" class=""></label>
+            <textarea id="delights" name="delights" placeholder="Опишите подробно все свои восторги"></textarea>
             <button type="submit">ОТПРАВИТЬ ОТЗЫВ</button>
-          </div>
-        </div>
+          </fieldset>
+        </fieldset>
       </form>
     </main>
     <footer class="footer">
