@@ -3,16 +3,17 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
-    <link href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lato&family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body class="page__body">
     <header class="page-header">
       <nav class="main-nav">
         <a class="page-header__logo" href="index.html">
-          <img src="https://via.placeholder.com/101x84">
+          <img src="img/logo-sedona-mobile.svg">
         </a>
-        <ul class="main-nav__list site-list">
+        <ul class="main-nav__list site-list ul-element">
           <li class="site-list__item"><a a href="index.html">ГЛАВНАЯ</a></li>
           <li class="site-list__item"><a href="photo.html">ФОТО И ВИДЕО</a></li>
           <li class="site-list__item"><a>ФОРМА ОТЗЫВА</a></li>
@@ -20,7 +21,8 @@
         </ul>
       </nav>
       <section class="hero">
-        <img src="https://via.placeholder.com/320x158">
+        <img src="img/bg-back-mobile@1x.jpg">
+        <img src="img/text-sedona.svg">
       </section>
     </header>
     <main class="form">
@@ -29,7 +31,7 @@
       <form class="form__container" action="https://echo.htmlacademy.ru">
         <fieldset class="form__fieldset">
           <legend class="form__title">ПРЕДСТАВЬТЕСЬ:</legend>
-          <ul class="form__list">
+          <ul class="form__list ul-element">
             <li class="form__item">
               <label for="name" class="">ИМЯ*:</label>
               <input id="name" required type="text" name="name" placeholder="Петр" class="" required>
@@ -46,7 +48,7 @@
         </fieldset>
         <fieldset class="form__fieldset">
           <legend class="form__title">КОНТАКТНАЯ ИНФОРМАЦИЯ:</legend>
-          <ul class="form__list">
+          <ul class="form__list ul-element">
             <li class="form__item">
               <label for="user-telephone">КОНТАКТНЫЙ ТЕЛЕФОН*</label>
               <input id="user-telephone" type="tel" name="telephone" placeholder="Введите телефон" required>
@@ -59,7 +61,7 @@
         </fieldset>
         <fieldset class="form__fieldset">
           <legend class="form__title">ВАШЕ ОБЩЕЕ ВПЕЧАТЛЕНИЕ:</legend>
-          <ul class="form__fields-list ">
+          <ul class="form__fields-list ul-element">
             <li class="form__field-item">
               <input type="radio" name="impression" value="положительное" id="positive" class="">
               <label for="positive">Скорее положительное
@@ -79,7 +81,7 @@
         </fieldset>
         <fieldset class="form__fieldset">
           <legend class="form__title">ПОСЕЩЕННЫЕ ДОСТОПРИМЕЧАТЕЛЬНОСТИ:</legend>
-          <ul class="form__inner-list">
+          <ul class="form__inner-list ul-element">
             <li class="form__inner-item">
               <input class="" type="checkbox" name="bridge" id="bridge" checked>
               <label for="bridge">Мост Дьявола</label>
@@ -109,10 +111,10 @@
     <footer class="footer">
     <p class="footer__hashtag">#VISITSEDONA</p>
     <div class="socials">
-      <ul class="socials__list">
-        <li><a href="#" class="socials__link"><img src=""  alt="">twitter</a></li>
-        <li><a href="#" class="socials__link"><img src=""  alt="">facebook</a></li>
-        <li><a href="#" class="socials__link"><img src="" alt="">YouTube</a></li>
+      <ul class="socials__list ul-element">
+        <li><a href="#" class="socials__link"><img src="img/icon-twitter.svg"  alt="">twitter</a></li>
+        <li><a href="#" class="socials__link"><img src="img/icon-facebook.svg"  alt="">facebook</a></li>
+        <li><a href="#" class="socials__link"><img src="img/icon-youtube.svg" alt="">YouTube</a></li>
       </ul>
     </div>
     <p class="footer__author">РАЗРАБОТАНО</p>
