@@ -1,11 +1,11 @@
 .advantages {
   line-height: @lh1;
-  margin-top: 30px;
 }
 
 .advantages__block--blue {
   background-color: @blue;
   padding-top: 37px;
+  color: white;
 
   p:last-of-type {
     padding-top: 0;
@@ -14,15 +14,14 @@
   }
 }
 
-
 .advantages__title {
-  font-size: @title2;
-  .center();
-  margin: 0;
-}
+	&:first-of-type {
+		margin-top: 30px;
+  }
 
-.advantages__title--white {
-  color: white;
+	.center();
+  font-size: @title2;
+  margin: 0;
 }
 
 .advantages__description {
@@ -33,10 +32,6 @@
 .advantages__list {
   .list-reset();
   margin: 0;
-}
-
-.advantages__description--white {
-  color: white;
 }
 
 .advantages__item--gray .advantages__item {
@@ -56,11 +51,15 @@
 font-size: @title2;
 }
 
+.advantages__item {
+  .list-reset();
+}
+
 .advantages__item--gray {
   background-color: #EEEEEE;
 }
 
-.advantages__devil {
+.advantages--devil {
 	position: relative;
 	&::after {
 		position: absolute;

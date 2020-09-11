@@ -1,18 +1,13 @@
 .photos__item {
+  .gray-line();
 	margin-top: 22px;
-	margin-bottom: 40px;
+  margin-bottom: 40px;
+
 	img {
 		display: block;
 		margin-left: auto;
 		margin-right: auto;
-	}
-	&::after {
-		position: absolute;
-		content: "";
-		width: 320px;
-		height: 1px;
-		background: #E5E5E5;
-	}
+  }
 }
 
 .photos__item:first-of-type {
@@ -25,8 +20,8 @@
 }
 
 .photos__paragraph {
-  font-size: @title3;
   .center();
+  font-size: @title3;
 }
 
 .photos__author {

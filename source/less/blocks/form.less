@@ -3,8 +3,8 @@
 }
 
 .form__title {
-  font-size: @title2;
   .center();
+  font-size: @title2;
 }
 
 .form__fieldset {
@@ -18,16 +18,7 @@
 .form__fieldset {
   position: relative;
   margin-top: 20px;
-}
-
-.form__fieldset::before {
-  text-align: left;
-  position: absolute;
-  content: "";
-  width: 320px;
-  height: 1px;
-  background: #E5E5E5;
-  top: -20px;
+  .gray-line();
 }
 
 .form__fieldset-list {
@@ -39,7 +30,11 @@
 }
 
 .form__description {
-  font-size: @title3;
   .center();
+  font-size: @title3;
   margin-bottom: 40px;
+
+  &:first-of-type {
+  .gray-line();
+  }
 }
